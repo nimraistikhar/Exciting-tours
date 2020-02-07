@@ -1,0 +1,228 @@
+/* ---------------------------------------- */
+/* ----- Basic Setup ----- */
+/* ---------------------------------------- */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Josefin sans', sans-serif;
+    font-size: 2.4rem;
+    color: #444;
+    font-weight: 300;
+    overflow-x: hidden;
+    font-size: 1.9rem;
+    line-height: 1.7;
+}
+
+
+/* ---------------------------------------- */
+/* ----- Basic Layout ----- */
+/* ---------------------------------------- */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    column-gap: 3.2em;
+}
+
+/***************Section*********************/
+
+section {
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+.section-tours {
+    background-color: #f4f4f4;
+
+}
+
+.section-tours .col {
+    overflow: hidden;
+    margin-bottom: 5rem;
+    border-radius: 3px;
+    backface-visibility: #fff;
+    padding: 0 0 4rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.6);
+    transition: all .3s;
+}
+
+
+.section-tours img {
+    display: block;
+    width: 100%;
+    max-height: 35rem;
+    transition: all .5s;
+}
+
+
+.section-tours h3 {
+    margin-top: 3rem;
+}
+
+
+.u-mb-sm {
+    font-size: 1.8rem;
+    padding: 1px 10px 1px 10px;
+    line-height: 1.1;
+    margin-bottom: 1.8rem !important;
+    margin-top:.8rem !important;
+}
+
+/* ---------------------------------------- */
+/* ----- Header ----- */
+/* ---------------------------------------- */
+
+.header {
+    height: 100vh;
+    padding: 0 2rem;
+    background-image: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)), url(../img/header.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-attachment: scroll;
+    position: relative;
+}
+
+.header__text-box {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    width: 70rem;
+    text-align: center;
+    opacity: .8;
+}
+
+.heading-primary {
+    font-size: 5.2rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    line-height: 1.2;
+    padding-bottom: 3rem;
+}
+
+.heading-tertiary {
+    font-size: 2.2rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    word-spacing: .9px;
+    padding-top: 2rem;
+    
+}
+
+
+/******************* btn *********************/
+
+.btn{
+    text-decoration: none;
+    color: #fff;
+    padding: 1.8rem 5rem;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    font-size: 1.9rem;
+}
+
+.btn-text,
+.btn-text:link,
+.btn-text:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.8rem;
+    border-bottom: 1px solid;
+    padding: .5rem 1rem;
+    transition: all .5s;
+}
+
+.btn-text:hover {
+    transform: translateY(-2px);
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+    border: 1px solid;
+}
+
+.btn--simple {
+    background-color: #333;
+    border: 1px solid #333 !important;
+    color: #fff;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+
+.btn:active {
+    transform: translateY(-1px);
+}
+
+.row::after {
+
+    content: "";
+    display: block;
+    clear: both;
+
+}
+
+/******************* logo *********************/
+
+.header__logo-box {
+    padding-top: 2rem;
+}
+
+.logo {
+    font-size: 4rem;
+}
+
+/*************** heading *****************/
+
+
+
+.heading-secondary {
+    font-size: 4rem;
+    font-weight: 500;
+    color: rgba(17, 17, 17, 0.87);
+}
+
+.heading-secondary::after {
+    content: " ";
+    display: block;
+    margin: 3rem auto 2rem;
+    height: 2px;
+    width: 12rem;
+    background-color: #333;
+
+}
+
+
+.u-center-text {
+    text-align: center !important;
+    margin-bottom: 4rem;
+}
+
+
+.img-tour {
+    filter: brightness(65%);
+}
+
+.img-tour:hover {
+    filter: brightness(100%);
+    transform: scaleX(1.02);
+}
